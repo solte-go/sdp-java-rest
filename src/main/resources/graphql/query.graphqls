@@ -1,0 +1,7 @@
+# Main query file
+type Query {
+    postById(id: ID): Post
+    posts: [Post]!
+}
+
+# Posts related schemas

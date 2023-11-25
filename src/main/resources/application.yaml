@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: soltedev-graphql-backend
+  graphql:
+    schema:
+      printer:
+        enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://localhost:5432/post_backend_db
+    username: sa_user
+    password: dev_only_pwd
+
+
+server:
+  http2:
+    enabled: true

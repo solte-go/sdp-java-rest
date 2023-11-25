@@ -15,11 +15,12 @@ public class PostController {
     }
 
     @QueryMapping
-    public Iterable<Post> posts(){
+    public Iterable<Post> posts() {
         return this.postRepository.findAll();
     }
 
-    @QueryMapping Post postById(@Argument long id){
+    @QueryMapping
+    Post postById(@Argument long id) {
         return this.postRepository.findById(id).orElseThrow();
 
     }
